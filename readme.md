@@ -31,19 +31,12 @@ key_test_abc123 - secret_test_xyz789
 Json Body
 
 {
-
     "amount": 50000,
-    
     "currency": "INR",
-    
     "receipt": "receipt_123",
-    
     "notes": {
-    
         "customer_name": "ABCD"
-        
-    }
-    
+    }    
 }
 
 Then order_id will be generated the use that id for checkout.
