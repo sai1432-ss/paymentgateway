@@ -9,7 +9,9 @@ The system separates **Merchant operations** and **Customer checkout flows**, cl
 
 ### Start the System
 docker-compose up --build
+
 Verify Installation
+
 API Health: http://localhost:8000/health
 
 Merchant Dashboard: http://localhost:3000
@@ -27,13 +29,21 @@ X-Api-Key - key_test_abc123
 key_test_abc123 - secret_test_xyz789
 
 Json Body
+
 {
+
     "amount": 50000,
+    
     "currency": "INR",
+    
     "receipt": "receipt_123",
+    
     "notes": {
+    
         "customer_name": "ABCD"
+        
     }
+    
 }
 
 Then order_id will be generated the use that id for checkout.
