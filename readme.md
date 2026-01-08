@@ -95,3 +95,5 @@ API Headers
 X-Api-Key: key_test_abc123
 
 X-Api-Secret: secret_test_xyz789
+
+![Dashboard Screenshot](./screenshots/Dashboard.png)
