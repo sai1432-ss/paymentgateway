@@ -16,6 +16,33 @@ Merchant Dashboard: http://localhost:3000
 
 Customer Checkout: http://localhost:3001
 
+In postman api generate a order_id by using postman api call 
+
+POST http://localhost:8000/api/v1/orders
+
+Headers-
+
+X-Api-Key - key_test_abc123
+
+key_test_abc123 - secret_test_xyz789
+
+Json Body
+{
+    "amount": 50000,
+    "currency": "INR",
+    "receipt": "receipt_123",
+    "notes": {
+        "customer_name": "ABCD"
+    }
+}
+
+Then order_id will be generated the use that id for checkout.
+
+http://localhost:3001/checkout?order_id={order_id}
+
+
+
+
 🛠️ Tech Stack
 Backend
 Node.js with Express.js
@@ -95,5 +122,3 @@ API Headers
 X-Api-Key: key_test_abc123
 
 X-Api-Secret: secret_test_xyz789
-
-![Dashboard Screenshot](./screenshots/Dashboard.png)
