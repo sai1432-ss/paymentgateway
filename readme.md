@@ -26,7 +26,7 @@ Headers-
 
 X-Api-Key - key_test_abc123
 
-key_test_abc123 - secret_test_xyz789
+X-Api-Secret - secret_test_xyz789
 
 Json Body -
 { 
